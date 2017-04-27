@@ -1,0 +1,86 @@
+<ons-page ng-controller="IdeaRegisterCtrl as ideaRegister">
+	<ons-toolbar>
+		<div class="center" style="color:#181818;font-size:13px;letter-spacing:1px;">
+			アイデアを投稿する
+		</div>
+	</ons-toolbar>
+	<ons-row>
+		<ons-col style="margin-top:5px;border-top:0.5px solid #ccc;"></ons-col>
+	</ons-row>
+	<ons-row class="tap_color" ng-click="ideaRegister.pushIdeaRegisterChannel()"><ons-col>
+		<ons-row style="margin-top:20px;">
+			<ons-col width="90%" class="register_menu_label grid_left" vertical-align="center">
+			 	Channel 選択
+			</ons-col>
+			<ons-col width="10%" class="register_menu_label grid_left grid_right" align="right" vertical-align="center">
+			 	<ons-icon icon="ion-chevron-right" size="20px" style="color:#ccc"></ons-icon>
+			</ons-col>
+		</ons-row>
+	</ons-col></ons-row>
+	<ons-row style="margin-top:15px;">
+		<ons-col class="grid_left" align="left" width="10%" style="line-height:35px">
+			<ons-icon icon="ion-compose" size="22px" style="color:#4d4d4d;" vertical-align="top"></ons-icon>
+		</ons-col>				
+		<ons-col class="grid_left_half grid_right" width="90%" align="left">
+			<ons-input id="modifyNameInput" modifier="material" placeholder="タイトル" style="width:100%;" my-input-focus="true" float></ons-input>
+		</ons-col>				
+	</ons-row>
+	<ons-row>
+		<ons-col class="register_label">
+		 	<ons-icon icon="ion-information-circled" size="12px" style="vertical-align:top;color:#FF6633"></ons-icon>
+		 	タイトルを入力してください
+		</ons-col>
+	</ons-row>
+	<ons-row style="margin-top:15px;">
+		<ons-col class="grid_left" align="left" width="10%" style="line-height:35px">
+			<ons-icon icon="ion-compose" size="22px" style="color:#4d4d4d;" vertical-align="top"></ons-icon>
+		</ons-col>				
+		<ons-col class="grid_left_half grid_right" width="90%" align="left" >
+			<ons-input id="modifyNameInput" modifier="material" placeholder="タグ1" style="width:100%;" float></ons-input>
+		</ons-col>				
+	</ons-row>
+	<ons-row style="margin-top:15px;">
+		<ons-col class="grid_left" align="left" width="10%" style="line-height:35px">
+			<ons-icon icon="ion-compose" size="22px" style="color:#4d4d4d;" vertical-align="top"></ons-icon>
+		</ons-col>				
+		<ons-col class="grid_left_half grid_right" width="90%" align="left">
+			<ons-input id="modifyNameInput" modifier="material" placeholder="タグ2" style="width:100%;" float></ons-input>
+		</ons-col>				
+	</ons-row>
+	<ons-row style="margin-top:15px;">
+		<ons-col class="grid_left" align="left" width="10%" style="line-height:35px">
+			<ons-icon icon="ion-compose" size="22px" style="color:#4d4d4d;" vertical-align="top"></ons-icon>
+		</ons-col>				
+		<ons-col class="grid_left_half grid_right" width="90%" align="left">
+			<ons-input id="modifyNameInput" modifier="material" placeholder="タグ3" style="width:100%;" float></ons-input>
+		</ons-col>				
+	</ons-row>
+	<ons-row>
+		<ons-col class="register_label">
+		 	<ons-icon icon="ion-information-circled" size="12px" style="vertical-align:top;color:#FF6633"></ons-icon>
+		 	タグを入力してください(任意)
+		</ons-col>
+	</ons-row>
+	<ons-row class="tap_color" ng-click="ideaRegister.pushIdeaRegisterText()"><ons-col>
+		<ons-row style="margin-top:20px;">
+			<ons-col width="90%" class="register_menu_label grid_left" vertical-align="center">
+			 	アイデア 入力
+			</ons-col>
+			<ons-col width="10%" class="register_menu_label grid_left grid_right" align="right" vertical-align="center">
+			 	<ons-icon icon="ion-chevron-right" size="20px" style="color:#ccc"></ons-icon>
+			</ons-col>
+		</ons-row>
+	</ons-col></ons-row>
+	<ons-bottom-toolbar class="bottom-toolbar-common">
+		<ons-row style="line-height:40px;">
+			<ons-col width="50%"></ons-col>
+			<ons-col width="30%" vertical-align="center" style="text-align:center" ng-click="ideaRegister.popIdeaRegister()">
+				<ons-icon icon="ion-close" size="20px" style="color:#999;"></ons-icon>
+			</ons-col>
+			<ons-col width="20%" vertical-align="center"  style="text-align:center" ng-click="ideaRegister.registerIdea()">
+				<ons-icon icon="ion-checkmark" size="24px" style="color:#16A6B6;"></ons-icon>
+			</ons-col>
+		</ons-row>
+	</ons-bottom-toolbar>
+</ons-page>
+

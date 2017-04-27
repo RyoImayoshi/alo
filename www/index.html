@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta http-equiv="Content-Security-Policy" content="default-src * data:; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+  <script src="components/angularjs/angular.js"></script>
+  <script src="components/loader.js"></script>
+  <script src="components/monaca-jquery/jquery.js"></script>
+  <script src="components/onsenui/js/angular-onsenui.js"></script>
+  <script src="components/onsenui/js/onsenui.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/util/MessageUtils.js"></script>
+  <script src="js/util/PopoverUtils.js"></script>
+  <script src="js/util/DialogUtils.js"></script>
+  <script src="js/util/PageUtils.js"></script>
+  <script src="js/util/NaviUtils.js"></script>
+  <script src="js/controller/Top.js"></script>
+  <script src="js/controller/TopMain.js"></script>
+  <script src="js/controller/TopIntro.js"></script>
+  <script src="js/controller/IdeaRegister.js"></script>
+  <script src="js/controller/IdeaRegisterChannel.js"></script>
+  <script src="js/controller/IdeaRegisterText.js"></script>
+  <script src="js/controller/ChannelList.js"></script>
+  <script src="js/controller/ChannelDetail.js"></script>
+  <script src="js/controller/ProfileMe.js"></script>
+  <script src="js/controller/ProfileStarter.js"></script>
+  <script src="js/controller/ProfileMentor.js"></script>
+  <script src="js/controller/Setting.js"></script>
+  <script src="js/controller/SettingName.js"></script>
+  <script src="js/controller/SettingEmail.js"></script>
+  <script src="js/controller/SettingPassword.js"></script>
+  <script src="js/controller/WallIdeaList.js"></script>
+  <script src="js/controller/WallIdeaDetail.js"></script>
+  <script src="js/controller/WallIdeaDetailComment.js"></script>  
+  <script src="js/controller/Achievement.js"></script>
+  <script src="js/data/ExperiencerData.js"></script>
+  <link rel="stylesheet" href="components/loader.css">
+  <link rel="stylesheet" href="components/onsenui/css/onsen-css-components.css">
+  <link rel="stylesheet" href="components/onsenui/css/onsenui.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style_images.css">
+  <link rel="stylesheet" href="css/style_override.css">
+</head>
+<body ng-app="mwApp">
+	<ons-navigator id="mwNavi" page="view/mw/top.html"></ons-navigator> 
+	
+	<ons-dialog id="messageDialog">
+		<ons-row style="background-color:#777;">
+			<ons-col style="padding-top:10px;color:#fff;font-size:16px;font-weight:300;line-height:30px;text-align:center;">
+				<ons-icon icon="ion-checkmark-round" size="21px" style="vertical-align:middle;margin-right:3px;"></ons-icon>
+				<span id="dialogMessage"></span>
+			</ons-col>
+		</ons-row>
+	</ons-dialog>
+
+	<ons-popover id="popover">
+		<div style="text-align:center;">
+			<p>
+				<ons-icon icon="ion-android-bulb" size="26px" style="color:#FF6633;"></ons-icon>
+			</p>
+		</div>
+	</ons-popover>
+
+</body>
+</html>

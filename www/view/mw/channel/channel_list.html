@@ -1,0 +1,70 @@
+<ons-page class="page-common" ng-controller="ChannelListCtrl as channelList">
+	<ons-row style="margin-top:20px;"></ons-row>
+	<ons-list class="list--noborder">
+		<ons-list-item-noborder data-ng-repeat="channelData in channelList.channelList">
+			<ons-row>
+				<ons-col width="50%" class="grid_left_half grid_right_half">
+					<img src="images/channel/{{channelData.key}}.jpg" class="img-banner_s_r2"/>
+				</ons-col>
+				<ons-col width="47%" vertical-align="top" style="margin-top:20px;height:90px;border-bottom:0.5px solid #999">
+					<ons-row>
+						<ons-col style="line-height:18px;">
+							<span style="color:#16A6B6;font-size:18px;margin-right:5px;">
+								{{channelData.channelName}}
+							</span>
+							<div style="color:#4d4d4d;font-size:11px;margin-left:10px;">のスタートアップアイデア</div>
+							<div style="color:#999">
+								<span style="font-size:12px;margin-right:2px;">
+									startup idea of {{channelData.channelNameEn}}
+								</span>
+							</div>
+						</ons-col>
+					</ons-row>
+				</ons-col>
+				<ons-col width="3%"></ons-col>
+			</ons-row>
+			<ons-row data-ng-repeat="channelDetailData in channelData.channelDetailList">
+				<ons-col>
+					<ons-row class="grid_left grid_right" style="margin-top:10px;">
+						<ons-col style="line-height:13px;">
+							<span style="color:#4d4d4d;font-size:15px;">
+								{{channelDetailData.channelName}}
+								<span style="color:#4d4d4d;font-size:11px;">
+									{{channelDetailData.channelNameSuffix}}
+								</span>
+							</span>
+							<div style="margin-top:10px;">
+								<span class="channel_box" ng-click="channelList.pushChannelDetail()">
+								#{{channelDetailData.channelNameEn}}
+								</span>
+							</div>
+						</ons-col>
+					</ons-row>
+					<ons-row class="grid_left grid_right" style="margin-top:25px;">
+						<ons-col style="line-height:12px;">
+							<span style="color:#555;font-size:10px;font-weight:300;">スターター&nbsp;{{channelDetailData.bgCnt}}人</span><br>
+							<span style="color:#555;font-size:10px;font-weight:300;">メンター&nbsp;{{channelDetailData.exCnt}}人</span>
+						</ons-col>
+						<ons-col align="right" style="line-height:15px;">
+							<div class="button-bar" style="width:90%;" ng-click="channelList.joinChannel(channelData.key + channelDetailData.channelNo)">
+								<div class="button-bar__item">
+									<input type="radio" name="channel_{{channelData.key + channelDetailData.channelNo}}" id="channel_{{channelData.key + channelDetailData.channelNo}}"/>
+									<div class="button-bar__button" style="text-align:center">
+										<span style="font-size:13px;">
+										<i class="ion-plus-round" id="jc_{{channelData.key + channelDetailData.channelNo}}" style="font-size:14px;margin-right:3px;font-weight:bold;"></i>
+										Joinする
+										</span>
+									</div>
+								</div>
+							</div>
+						</ons-col>
+					</ons-row>
+					<ons-row class="grid_left grid_right" style="margin-top:10px;">
+						<ons-col style="border-bottom:0.5px solid #999;"></ons-col>
+					</ons-row>
+				</ons-col>
+			</ons-row>
+			<ons-row style="margin-bottom:30px;"></ons-row>
+		</ons-list-item-noborder>
+	</ons-list>
+</ons-page>

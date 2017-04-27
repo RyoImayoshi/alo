@@ -1,0 +1,101 @@
+<ons-page class="page-common" ng-controller="ProfileMentorCtrl as profileMentor">
+	<ons-row style="margin-top:1%">
+		<ons-col width="100%" align="right">
+			<img src="images/country/001.png" class="img-country" style="margin-right:2%">
+		</ons-col>
+	</ons-row>
+	<ons-row>
+		<ons-col>
+			<img src="images/delete{{profileMentor.experiencerId}}.jpg" class="img-banner_cover_large"/>
+		</ons-col>
+	</ons-row>
+	<ons-row style="margin-top:5px;">
+		<ons-col style="line-height:25px;" vertical-align="center">
+			<span style="color:#4d4d4d;font-size:18px;font-weight:bold;letter-spacing:2px;word-wrap:break-word;">
+				Ryo Imayoshi
+			</span>
+			<div style="color:#999;font-size:15px;word-wrap:break-word;">
+				messagewall Inc. CEO
+			</div>
+		</ons-col>
+	</ons-row>
+	<ons-row style="margin-top:15px;" ng-click="profileMentor.trust()">
+		<ons-col align="center" style="line-height:11px;">
+			<div id="trustCnt" style="color:#999;font-size:13px;">35</div>
+			<div><i id="trustIcon" class="ion-android-favorite-outline" style="color:#999;font-size:28px;"></i></div>
+			<div id="trustText" style="color:#ddd;font-size:12px;">このメンターのファンです</div>
+		</ons-col>
+	</ons-row>
+	<ons-row style="margin-top:20px;">
+		<ons-col width="10%"></ons-col>
+		<ons-col style="border-top:0.5px solid #ccc;border-bottom:0.5px solid #ccc;">
+			<ons-row>
+				<ons-col>
+					<div style="color:#16A6B6;font-size:13px;font-weight:bold;margin-top:10px;">JOB</div>
+					<div style="color:#4d4d4d;font-size:16px;">
+						システムエンジニア
+					</div>
+					<div style="color:#999;font-size:12px;margin-top:10px;">
+						エンジニア歴15年
+					</div>
+				</ons-col>
+			</ons-row>
+			<ons-row style="margin-top:15px;">
+				<ons-col>
+					<div style="color:#16A6B6;font-size:13px;font-weight:bold;line-height:17px;">
+						CHANNEL
+						<div style="color:#16A6B6;font-size:10px;font-weight:400;">& アイデアのスタンス</div>
+					</div>
+					<div style="color:#999;font-size:15px;margin-top:15px;font-weight:300;">
+						<div style="padding-bottom:5px;" ng-repeat="i in [1,2,3]">
+							<ons-row>
+								<ons-col ng-click="profileMentor.pushChannelDetail()">
+									<span class="channel_box" style="margin-right:3px;">
+										#system-engineer
+									</span>
+								</ons-col>
+							</ons-row>
+							<ons-row style="margin-bottom:20px;">
+								<ons-col class="grid_left" style="font-size:13px;line-height:10px;">
+									<ons-row style="margin-top:10px">
+										<ons-col align="left" style="color:#4d4d4d;font-size:9px;font-weight:400;">BUSINESS</ons-col>
+										<ons-col align="right" class="grid_right_half" style="color:#4d4d4d;font-size:9px;font-weight:400;">LIFE/HOBBY</ons-col>
+									</ons-row>
+									<ons-row>
+										<ons-col align="center" class="grid_right" ng-repeat="i in [1,2,3,4,5]">
+											<ons-icon icon="ion-record" size="13px" style="color:#eee" ng-if="i != 2"></ons-icon>
+											<ons-icon icon="ion-disc" size="18px" style="color:#EE6557" ng-if="i == 2"></ons-icon>
+										</ons-col>
+									</ons-row>
+								</ons-col>
+							</ons-row>
+						</div>
+					</div>
+				</ons-col>
+			</ons-row>
+		</ons-col>
+		<ons-col width="10%"></ons-col>
+	</ons-row>
+	<ons-row style="margin-top:20px;">
+		<ons-col align="left" class="grid_left grid_right">
+		<div style="color:#4d4d4d;font-size:15px;font-weight:bold;">
+			message
+			<ons-icon icon="ion-android-hangout" size="18px"></ons-icon>
+		</div>
+		<div style="color:#4d4d4d;font-size:13px;font-weight:400;margin-top:10px;">
+Webサービスの企業で開発マネージャーをやっています。<br/>社会人歴は6年目のひよっこです。最近の主な仕事は以下のとおりです。<br/>
+プロダクトマネジメント、システムアーキテクト、プロジェクト管理、システム設計・開発、ソースコードレビュー、保守運用・障害対応、管理職的雑務。<br/><br/>
+Safe Harbor Statement<br/>本稿には僕が仕事をしている時に思っていることをそのまま書いてあります。主に精神論です。なので、ここに書いてあることがどんな状況においても有効であるとは思っていません。いいことが書いてあるなぁ、と漠然に感じていただければ幸いです。<br/>
+「それは違うでしょ」って感じる方がいることも理解しています。そういうときは僕が参考にしたいのでコメント欄に書いていただくか、そっとしておいていただけると嬉しいです。<br/>
+		</div>
+		</ons-col>
+	</ons-row>
+	<ons-bottom-toolbar class="bottom-toolbar-common">
+		<ons-row style="line-height:40px;">
+			<ons-col width="80%"></ons-col>
+			<ons-col width="20%" vertical-align="center" ng-click="profileMentor.popExProfile()">
+				<ons-icon icon="ion-chevron-down" size="20px" style="color:#999"></ons-icon>
+			</ons-col>
+		</ons-row>			
+	</ons-bottom-toolbar>
+</ons-page>

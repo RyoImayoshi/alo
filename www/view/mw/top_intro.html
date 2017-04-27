@@ -1,0 +1,84 @@
+<ons-page ng-controller="TopIntroCtrl as topIntro">
+	<ons-toolbar>
+		<div class="center" style="color:#181818;font-size:14px;letter-spacing:1px;">
+			about　 - walls ALO -
+		</div>
+	</ons-toolbar>
+	<ons-row style="margin-top:10px;">
+		<ons-col class="grid_left grid_right" >
+			<img src="images/intro1.png" class="img-rectangle-radius-intro"/>
+		</ons-col>
+	</ons-row>
+	<ons-row style="margin-top:10px;">
+		<ons-col align="left" class="grid_left grid_right" style="font-size:13px;line-height:25px;">
+			<ons-icon icon="ion-quote" size="16px" style="vertical-align:top;"></ons-icon>	
+ようこそ ALOへ！<br>
+ALOはラテン語で「育てる」「育む」ことを意味する「Spot Mentor System／スポットメンターシステム」です<br><br>
+
+世界中のあらゆるジャンルにおいて、新しいことを始めたい
+<span class="intro_box" style="background-color:#FBDBDB;color:#EE6557">スターター</span>
+や
+<span class="intro_box" style="background-color:#FBDBDB;color:#EE6557">ビギナー</span>
+の最初の一歩を、そのカテゴリで活躍する
+<span class="intro_box" style="background-color:#A5EBF3;color:#16A6B6">メンター</span>
+が自らの経験と知識を元に後押してくれるでしょう<br><br>
+
+	<ons-row>
+		<ons-col>
+			<img src="images/channel/education.jpg" class="img-rectangle-radius-intro"/>
+		</ons-col>
+	</ons-row>
+
+<ons-icon icon="ion-quote" size="16px" style="vertical-align:top;"></ons-icon>	
+まずはあなたが興味のある
+<ons-icon icon="ion-information-circled" size="12px" style="vertical-align:top;color:#FF6633"></ons-icon>
+<span class="intro_box" style="background-color:#FEE9CA;color:#FF6633" onclick="showPopover('popover', 'targetChannel', 'up', true)">
+channelに参加
+</span>
+しましょう<br>他のスターターによって投稿された
+<ons-icon icon="ion-information-circled" size="12px" style="vertical-align:top;color:#FF6633"></ons-icon>
+<span class="intro_box" style="background-color:#FEE9CA;color:#FF6633" onclick="showPopover('popover', 'targetWall', 'up', true)">
+スタートアップアイデアがwallに表示
+</span>
+されます<br><br>
+
+あなたが第一歩を踏み出すために必要なスタートアップアイデアは見つかりましたか？<br>
+もし見つからなければあなたの必要とする<br>
+
+<ons-icon icon="ion-information-circled" size="12px" style="vertical-align:top;color:#FF6633"></ons-icon>
+<span class="intro_box" style="background-color:#FEE9CA;color:#FF6633" onclick="popoverTargetRegister()">
+スタートアップアイデアを投稿
+</span>
+してみましょう<br><br>
+
+<!--
+楽しい？<br><br>
+やりがいがある？<br><br>
+上達の方法は？<br><br>
+何から手を付ければいい？<br><br><br>
+
+今更聞けない。<br>
+でも確かな情報が欲しい。<br><br><br>
+-->
+
+	<ons-row>
+		<ons-col>
+			<img src="images/channel/business.jpg" class="img-rectangle-radius-intro"/>
+		</ons-col>
+	</ons-row>
+
+きっと経験と才能あふれる多くのメンター達があなたの力になってくれます。<br><br>
+そしてまた、あなたのスタートアップアイデアはあなたと同じ想いをもつスターターにも新しい発見をもたらすでしょう。<br><br>
+
+			
+		</ons-col>
+	</ons-row>
+	<ons-bottom-toolbar class="bottom-toolbar-common">
+		<ons-row>
+			<ons-col align="right" class="grid_right" ng-click="topIntro.popTopIntro()">
+				<ons-icon icon="ion-chevron-down" size="20px" style="margin-top:14px;color:#999"></ons-icon>
+			</ons-col>
+		</ons-row>	
+	</ons-bottom-toolbar>
+</ons-page>
+

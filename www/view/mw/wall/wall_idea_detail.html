@@ -1,0 +1,156 @@
+<ons-page ng-controller="WallIdeaDetailCtrl as wallIdeaDetail">
+	<ons-list class="list--noborder">
+		<ons-list-item>
+			<ons-row style="margin-top:20px;">
+				<ons-col align="right" class="grid_right" style="letter-spacing:1px;" ng-click="wallIdeaDetail.pushChannelDetail()">
+					<span class="channel_box">#system-engineer</span>
+				</ons-col>
+			</ons-row>
+			<ons-row style="margin-top:10px;">
+				<ons-col width="70px" align="left" class="grid_left">
+					<img src="images/no_profile_s.jpg" class="img-user-list-icon-s-small"/>
+				</ons-col>
+				<ons-col vertical-align="center" style="color:#181818;font-size:12px;font-weight:bold;">
+					ryoImayoshi
+				</ons-col>
+			</ons-row>
+			
+			<ons-row class="grid_left grid_right" style="margin-top:10px;color:#4d4d4d;">
+				<ons-col style="font-size:18px;font-weight:400;line-height:30px;">
+					システムエンジニアになりたいと思っています
+				</ons-col>
+			</ons-row>
+			<ons-row style="margin-top:15px;">
+				<ons-col>
+					<span>
+						<img src="images/delete1.jpg" class="img-banner_cover_small"/>
+					</span>
+				</ons-col>
+			</ons-row>
+			<ons-row class="grid_left_2t grid_right_2t" style="margin-top:15px;">
+				<ons-col style="font-size:11px;color:#EE6557;">
+					<div style="margin-top:5px;line-height:10px;" ng-repeat="i in [1,2,3]">
+						<span style="vertical-align:top">
+							<i class="ion-ios-pricetag" style="font-size:14px;margin-right:3px;"></i>
+						</span>
+						<span style="vertical-align:top">
+							覚えてたほうがいいプログラムがあれば是非。
+						</span>
+					</div>
+				</ons-col>
+			</ons-row>
+			<ons-row class="grid_left grid_right" style="margin-top:15px;">
+				<ons-col class="idea_box_s" style="color:#4d4d4d;font-size:14px;font-weight:400;">
+将来システムエンジニアとして働いて行きたいという学生の知恵袋での質問に対して
+「SEはプログラマーじゃないので技術スキルは要りません。コミュニケーション能力が有るかどうかだけが重要です。
+」
+などという回答が書かれているのをよく見かけます。
+
+こういう回答者はなぜ平然と嘘をつくのはなぜでしょうか？システムエンジニアの経験が無く、どこかのWeb記事のコピペで回答しているということでしょうか？
+
+システムエンジニアに最低限の知識(基本情報技術者レベルは必須)が無ければ、当然プログラマとのコミュニケーションが上手く行きません。また、顧客とのコミュニケーションにおいても要点が引き出せません。また、顧客の方が技術知識が上な場合、技術知識が無いことが露呈すると信用されません。(すごく知識の豊富な部下を連れており、自由に操連れている様子でも顧客に見せられれば別ですが…)
+
+無責任な回答をする輩が消えない理由について誰かご回答願います。
+				</ons-col>
+			</ons-row>
+			<ons-row class="grid_right" style="margin-top:10px;">
+				<ons-col align="right">
+					<span style="font-size:10px;color:#555;border-bottom:0.5px solid #555">編集</span>
+				</ons-col>
+			</ons-row>
+			<ons-row style="margin-top:10px;">
+				<ons-col></ons-col>
+				<ons-col width="40px" align="left" style="color:#555;font-size:10px;">
+					<ons-icon icon="ion-ios-chatbubble-outline" size="18px" style="margin-right:2px;"></ons-icon>12
+				</ons-col>
+				<ons-col width="40px" align="left" style="color:#555;font-size:10px;">
+					<ons-icon icon="ion-ios-eye-outline" size="18px" style="margin-right:2px;"></ons-icon>5,234
+				</ons-col>
+				<ons-col width="60px" align="right" class="grid_right" style="color:#555;font-size:10px;">
+					1日前
+				</ons-col>
+			</ons-row>
+			<!-- me tooは検討
+			<ons-row class="grid_right" style="margin-top:5px;" ng-click="ideaDetail.meToo()">
+				<ons-col style="color:#999;font-size:14px;text-align:center;line-height:5px;">
+					<ons-row>
+						<ons-col id="meTooCnt" style="color:#999;font-size:13px;">35</ons-col>
+					</ons-row>
+					<ons-row style="line-height:30px">
+						<ons-col id="meTooIcon">
+							<i class="ion-android-happy" style="color:#999;font-size:28px;vertical-align:middle;"></i>
+							Me Too
+						</ons-col>
+					</ons-row>
+				</ons-col>
+			</ons-row>
+			-->
+		</ons-list-item>
+	</ons-list>
+	<ons-row style="margin-top:5px;">
+		<ons-col style="border-bottom:0.5px solid #ccc;"></ons-col>
+	</ons-row>
+	<ons-list class="list--noborder">
+ 		<ons-lazy-repeat id="exIdeaList">
+ 		<ons-list-item>
+			<ons-row class="grid_left grid_right" style="margin-top:10px;">
+				<ons-col style="line-height:15px;">
+					<span style="color:#181818;font-size:12px;font-weight:bold;">RyoImayoshi</span>
+					<span style="font-size:12px;line-height:18px;color:#EE6557;">
+						<ons-icon icon="ion-android-favorite" size="12px" style="margin-left:8px;vertical-align:middle;"></ons-icon>
+						125
+					</span>
+					<div style="color:#999;font-size:12px;">Messagewall Inc. CEO</div>
+				</ons-col>
+			</ons-row>
+			<ons-row class="grid_left grid_right" style="margin-top:10px;">
+				<ons-col width="100%">
+					<img id="exProfileImage" class="img-banner_cover_small"/>
+				</ons-col>
+			</ons-row>
+			<!-- JSでstyleを操作してるため安易にid、classを変更しない -->
+			<ons-row style="text-align:center;margin-top:15px;" id="judgement">
+				<ons-col align="right" id="judgeBad">
+					<ons-icon icon="ion-android-arrow-dropdown-circle" size="28px"></ons-icon>
+				</ons-col>
+				<ons-col width="20%" align="center" id="judgeCnt">
+					<span style="font-size:18px;">25</span>
+				</ons-col>
+				<ons-col align="left" id="judgeGood">
+					<ons-icon icon="ion-android-arrow-dropup-circle" size="28px"></ons-icon>
+				</ons-col>
+			</ons-row>
+			<!-- -- -->
+			<ons-row class="grid_left grid_right" style="margin-top:15px;">
+				<ons-col id="exIdea" class="idea_box_m" width="100%" style="color:#4d4d4d;font-size:14px;font-weight:400;line-height:18px;word-break:normal;"></ons-col>
+			</ons-row>
+			<ons-row class="grid_left grid_right" style="margin-top:10px;text-align:center;" id="ideaComment">
+				<ons-col align="right" style="line-height:18px;color:#16A6B6;font-size:12px;line-height:30px;">
+					<ons-icon icon="ion-chatbubbles" size="16px" style="margin-right:3px;vertical-align:top;"></ons-icon>
+					10 コメント
+				</ons-col>
+			</ons-row>
+			<ons-row class="grid_left">
+				<ons-col align="left" style="color:#999;font-size:12px;font-weight:300;">Mentor AD</ons-col>
+			</ons-row>
+			<ons-row>
+				<ons-col class="grid_left grid_right" style="height:100px;background:#ddd;">
+				</ons-col>
+			</ons-row>
+			<ons-row class="grid_right">
+				<ons-col align="right" style="color:#555;font-size:10px;margin-bottom:10px;">
+					1日前
+				</ons-col>
+			</ons-row>
+		</ons-list-item>
+		</ons-lazy-repeat>
+	</ons-list>
+	<ons-bottom-toolbar class="bottom-toolbar-common">
+		<ons-row style="line-height:40px;">
+			<ons-col width="80%"></ons-col>
+			<ons-col width="20%" vertical-align="center" ng-click="wallIdeaDetail.popWallIdeaDetail()">
+				<ons-icon icon="ion-chevron-down" size="20px" style="color:#999"></ons-icon>
+			</ons-col>
+		</ons-row>			
+	</ons-bottom-toolbar>
+</ons-page>

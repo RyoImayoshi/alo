@@ -1,0 +1,154 @@
+@charset "UTF-8";
+
+/* 
+color-base:#F5F5F5 White Smoke
+color-1:#16A6B6 (22, 166, 182) Light Sea Green
+thin:#A5EBF3 (165, 235, 243)
+color-2:#EE6557 (238, 101, 87) Burnt Sienna
+thin:#FBDBDB (251, 219, 219)
+color-3:#BFBFBF Silver
+color-black:#181818 (24 24 24) Nero
+
+-webkit-border >> Safari,Google Chrome
+-moz-border- >> Firefox
+
+直接onsenui系ファイルに手を入れている箇所
+・ons-fab
+
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600');
+*/
+
+@font-face {
+    font-family: 'NotoSansCJKjp';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../font/NotoSansCJKjp-Light.woff');
+}
+@font-face {
+    font-family: 'NotoSansCJKjp';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../font/NotoSansCJKjp-Regular.woff');
+}
+
+*, .page-common, .ft_button, .bottom-toolbar-common {
+	/*font-family: 'Titillium Web', 'NotoSansCJKjp', sans-serif;*/
+	font-family: 'PT Sans', 'NotoSansCJKjp', sans-serif;
+}
+
+/* 現在使用できません */
+.ft_titillium{
+	font-family: 'Titillium Web', 'NotoSansCJKjp', sans-serif;
+}
+
+.page-common {
+  width: 100%;
+  text-align: center;
+  padding 0;
+  margin 0;
+}
+
+.ft_button {
+  font-size:15px;
+}
+
+.belt {
+  height:12px;
+  background-color:#bbb;
+}
+
+.grid_left {
+  padding-left:14px;
+}
+
+.grid_left_half {
+  padding-left:7px;
+}
+
+.grid_left_2t {
+  padding-left:21px;
+}
+
+
+.grid_right {
+  padding-right:14px;
+}
+
+.grid_right_half {
+  padding-right:7px;
+}
+
+.grid_right_2t {
+  padding-right:21px;
+}
+
+.channel_box {
+  color:#EE6557;
+  font-size:13px;
+  font-weight:300;
+  letter-spacing:1px;
+  padding:3px 3px 5px 5px;
+  background-color:#eee;
+  border-radius:10px;
+  -webkit-border-radius:10px;
+  -moz-border-radius:10px;
+  opacity: 0.7;
+}
+
+.idea_box_s {
+  padding:10px;
+  /*background-color:rgba(251, 219, 219, 0.1);*/
+  border-radius:10px;
+  border : 0.5px solid rgb(238, 101, 87);
+  -webkit-border-radius:10px;
+  -moz-border-radius:10px;
+}
+
+.idea_box_m {
+  padding:10px;
+  /*background-color:rgba(165, 235, 243, 0.0);*/
+  border-radius:10px;
+  border : 0.5px solid rgb(22, 166, 182);
+  -webkit-border-radius:10px;
+  -moz-border-radius:10px;
+}
+
+.intro_box {
+  padding:2px 5px;
+  border-radius:10px;
+  -webkit-border-radius:10px;
+  -moz-border-radius:10px;
+  opacity: 0.8;
+}
+
+.register_label {
+  font-size:10px;
+  color:#999;
+  height:30px;
+  border-bottom:0.5px solid #ccc;
+  padding-left:18px;
+  padding-top:10px;	
+}
+
+.register_menu_label {
+  font-size:15px;
+  color:#999;
+  height:45px;
+  border-bottom:0.5px solid #ccc;
+}
+
+.judgeNoTap {
+	color:#999;
+}
+.judgeGoodTap {
+	color:#EE6557;
+}
+.judgeBadTap {
+	color:#16A6B6;
+}
+
+.tap_color:active {
+  background-color: #d9d9d9;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}

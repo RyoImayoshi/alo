@@ -1,0 +1,67 @@
+<ons-page class="page-common" ng-controller="WallIdeaListCtrl as wallIdeaList">
+	<ons-pull-hook id="ideaListPullHook" threshold-height="0"></ons-pull-hook>
+	<ons-list class="list--noborder">
+		<ons-list-item>
+			<ons-row style="margin-top:20px;" ng-click="wallIdeaList.pushChannelDetail()">
+				<ons-col align="right" class="grid_right">
+					<span class="channel_box">#system-engineer</span>
+				</ons-col>
+			</ons-row>
+			<ons-row style="margin-top:5px;">
+				<ons-col width="70px" align="center" class="grid_left grid_right" ng-click="wallIdeaList.pushProfileStarter()">
+					<img src="images/no_profile_s.jpg" class="img-user-list-icon-s-small"/>
+				</ons-col>
+				<ons-col ng-click="wallIdeaList.pushWallIdeaDeatil()">
+					<ons-row style="color:#4d4d4d;margin-top:10px;">
+						<ons-col>
+							<span style="font-size:12px;color:#181818;font-weight:bold;">ryoimayoshi</span>
+						</ons-col>
+					</ons-row>
+					<ons-row style="color:#4d4d4d;margin-top:10px;">
+						<ons-col class="grid_right_half" style="font-size:18px;font-weight:400;line-height:30px;">
+							システムエンジニアになりたいと思っています
+						</ons-col>
+					</ons-row>
+					<ons-row style="margin-top:30px;border-bottom:0.5px solid #ccc">
+						<ons-col width="40px" align="left" style="color:#EE6557;font-size:10px;">
+							<span>
+								<ons-icon icon="ion-ios-pricetag" size="12px" style="margin-right:2px;vertical-align:middle;"></ons-icon>
+							</span>
+							<span>3</span>
+						</ons-col>
+						<ons-col width="40px" align="left" style="color:#555;font-size:10px;">
+							<ons-icon icon="ion-ios-chatbubble-outline" size="18px" style="margin-right:2px;"></ons-icon>12
+						</ons-col>
+						<ons-col width="60px" align="left" style="color:#555;font-size:10px;">
+							<ons-icon icon="ion-ios-eye-outline" size="18px" style="margin-right:2px;"></ons-icon>5,234
+						</ons-col>
+						<ons-col></ons-col>						
+						<ons-col width="60px" align="right" class="grid_right" style="color:#555;font-size:10px;">
+							1日前
+						</ons-col>
+					</ons-row>
+				</ons-col>
+			</ons-row>
+			<ons-row style="margin-top:10px;" ng-click="wallIdeaList.pushWallIdeaDeatil()">
+				<ons-col>
+					<img src="images/delete1.jpg" class="img-banner_cover_small"/>
+				</ons-col>
+			</ons-row>
+			<ons-row style="margin-top:10px;margin-bottom:10px;">
+				<ons-col width="100%" align="center">
+					<!--  現状ons-carouselは慣性力のあるslideができないのでデザイン上納得してない。-->
+					<ons-carousel id="carousel" style="padding-top:2px;width:100%;height:70px;" item-width="77px" swipeable overscrollable auto-scrol>
+						<ons-carousel-item ng-repeat="i in [1,2,3,4,5,6]">
+							<span style="margin-left:10px;" ng-click="wallIdeaList.pushProfileMentor(i)">
+								<img src="images/delete{{i}}.jpg" class="img-user-list-icon-gp"/><span></span>
+							</span>
+						</ons-carousel-item>
+					</ons-carousel>
+				</ons-col>
+			</ons-row>
+			<ons-row style="margin-bottom:20px;">
+				<ons-col style="border-bottom:0.5px solid #ccc;"></ons-col>
+			</ons-row>
+		</ons-list-item>
+	</ons-list>
+</ons-page>

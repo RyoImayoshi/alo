@@ -1,0 +1,23 @@
+<!-- (c) 2017 Messagewall Inc. -->
+<ons-page class="page-common" ng-controller="TopMainCtrl as topMain">
+	<ons-tabbar id="tab" ng-if="true"><!--animation="fade"-->
+		<span style="width:37%;position:relative;" >
+			<span style="position:fixed;bottom:7px;left:10px;line-height:1px;">
+				<ons-speed-dial id="dial">
+					<ons-fab>
+						<img src="images/company_logo.png" width="35px" height="35px" style="padding-bottom:12px;vertical-align:middle;" />
+					</ons-fab>
+					<ons-speed-dial-item style="vertical-align:middle;background-color:#EE6557;" id="targetRegisterIdea" ng-click="topMain.pushIdeaRegister()">
+						<ons-icon icon="ion-edit" size="18px" style="color:#fff;" ></ons-icon>
+					</ons-speed-dial-item>
+					<ons-speed-dial-item style="background-color:#16A6B6;" ng-click="topMain.pushTopIntro()">
+						<ons-icon icon="ion-information" size="22px" style="color:#fff;"></ons-icon>
+					</ons-speed-dial-item>
+				</ons-speed-dial>
+			</span>
+		</span>
+		<ons-tab style="width:21%" page="view/mw/navi/navi_wall.html" label="wall" icon="ion-chatbubble-working" id="targetWall" active></ons-tab>
+		<ons-tab style="width:21%" page="view/mw/navi/navi_channel.html" label="channel" id="targetChannel" icon="ion-pound"></ons-tab>
+		<ons-tab style="width:21%" page="view/mw/navi/navi_profile.html" label="me" id="targetProfile" icon="ion-at"></ons-tab>
+    </ons-tabbar>
+</ons-page>

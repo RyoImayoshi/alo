@@ -1,0 +1,36 @@
+<ons-page class="page-common" ng-controller="AchievementCtrl as achievement">
+	<ons-row style="margin-top:10px;"></ons-row>
+	<ons-row ng-repeat="achievementData in achievement.achievementList">
+		<ons-col width="20%" align="center" class="grid_left grid_right">
+			<span class="zmdi-hc-stack zmdi-hc-lg">
+			<i class="zmdi zmdi-chart-donut zmdi-hc-stack-2x" style="color:#ddd"></i>
+			<i class="zmdi {{achievementData.medalIcon}} zmdi-hc-stack-1x" style="color:#ddd"></i>
+			</span>
+		</ons-col>
+		<ons-col width="70%" align="left" class="grid-left grid_right" style="padding-top:10px;padding-bottom:10px;border-bottom:0.5px solid #ccc">
+			<ons-row>
+				<ons-col>
+					<span style="color:#4d4d4d;font-size:15px; margin-left:5px;">{{achievementData.achievementTitle}}</span>
+				</ons-col>
+			</ons-row>
+			<ons-row>
+				<ons-col>
+					<span style="color:#4d4d4d;font-size:11px; margin-left:15px;">{{achievementData.achievementDetail}}</span>
+				</ons-col>
+			</ons-row>
+		</ons-col>
+		<ons-col width="10%" align="center" class="grid_left grid_right">
+			<span style="font-size:12px;">
+				5
+			</span>
+		</ons-col>
+	</ons-row>
+	<ons-bottom-toolbar class="bottom-toolbar-common">
+		<ons-row style="line-height:40px;">
+			<ons-col width="80%"></ons-col>
+			<ons-col width="20%" vertical-align="center" ng-click="achievement.popAchievement()">
+				<ons-icon icon="ion-chevron-down" size="20px" style="color:#999"></ons-icon>
+			</ons-col>
+		</ons-row>			
+	</ons-bottom-toolbar>
+</ons-page>

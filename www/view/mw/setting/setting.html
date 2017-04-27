@@ -1,0 +1,50 @@
+<ons-page class="page-common" ng-controller="SettingCtrl as setting">
+	<ons-row style="margin-top:5px;background-color:#eee">
+		<ons-col align="left" class="grid_left_half" style="border-top:0.5px solid #ccc;font-weight:bold;">
+			<span style="font-size:13px;">Account</span>
+		</ons-col>
+	</ons-row>
+	<ons-list>
+	    <ons-list-item style="border:none" modifier="chevron" ng-click="setting.pushSettingName()" tappable>
+	    	<span class="grid_left" style="font-size:13px;">ユーザ名変更</span>
+	   	</ons-list-item>
+	    <ons-list-item style="border:none" modifier="chevron" ng-click="setting.pushSettingEmail()" tappable>
+	    	<span class="grid_left" style="font-size:13px;">メールアドレス変更</span>
+	   	</ons-list-item>
+	    <ons-list-item modifier="chevron" ng-click="setting.pushSettingPassword()" tappable>
+	    	<span class="grid_left" style="font-size:13px;">パスワード変更</span>
+	   	</ons-list-item>
+	</ons-list>
+	<ons-row style="background-color:#eee">
+		<ons-col align="left" class="grid_left_half" style="font-weight:bold;">
+			<span style="font-size:13px;">About</span>
+		</ons-col>
+	</ons-row>
+	<ons-list>
+	    <ons-list-item style="border:none">
+	    	<span class="grid_left" style="font-size:13px;font-weight:bold;color:#16A6B6">MESSAGEWALL　0.0.1</span>
+	   	</ons-list-item>
+	    <ons-list-item style="border:none" modifier="chevron" tappable>
+	    	<span class="grid_left" style="font-size:13px;">利用規約</span>
+	   	</ons-list-item>
+	    <ons-list-item style="border:none" modifier="chevron" tappable>
+	    	<span class="grid_left" style="font-size:13px;">プライバシーポリシー</span>
+	   	</ons-list-item>
+	    <ons-list-item modifier="chevron" tappable>
+	    	<span class="grid_left" style="font-size:13px;">お問い合わせ</span>
+	   	</ons-list-item>
+	</ons-list>
+	<ons-list style="margin-top:40px;">
+	    <ons-list-item style="border:none" tappable>
+	    	<span class="grid_left" style="font-size:15px;font-weight:bold;color:#BFBFBF">Log out</span>
+	   	</ons-list-item>
+	</ons-list>
+	<ons-bottom-toolbar class="bottom-toolbar-common">
+		<ons-row style="line-height:40px;">
+			<ons-col width="80%"></ons-col>
+			<ons-col width="20%" vertical-align="center" ng-click="setting.popSetting()">
+				<ons-icon icon="ion-chevron-down" size="20px" style="color:#999"></ons-icon>
+			</ons-col>
+		</ons-row>			
+	</ons-bottom-toolbar>
+</ons-page>

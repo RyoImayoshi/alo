@@ -1,0 +1,23 @@
+<ons-page class="page-common" ng-controller="SettingNameCtrl as settingName">
+	<ons-row style="margin-top:40px;">
+		<ons-col class="grid_left" align="left" width="10%" style="line-height:32px">
+			<ons-icon icon="ion-compose" size="22px" style="color:#4d4d4d;" vertical-align="top"></ons-icon>
+		</ons-col>				
+		<ons-col class="grid_left_half grid_right" width="90%" align="left">
+			<ons-input id="modifyNameInput" modifier="material" placeholder="{{settingName.modifyNameLabel}}" style="width:100%;" float></ons-input>
+			<ons-button class="btn">aaa</ons-button>
+		</ons-col>				
+	</ons-row>
+	<ons-bottom-toolbar class="bottom-toolbar-common">
+		<ons-row style="line-height:40px;">
+			<ons-col width="50%">
+			</ons-col>
+			<ons-col width="30%" align="center" vertical-align="center" ng-click="settingName.popSettingName()">
+				<ons-icon icon="ion-chevron-left" size="20px" style="color:#999"></ons-icon>
+			</ons-col>
+			<ons-col width="20%" vertical-align="center" ng-click="settingName.modifyName()">
+				<ons-icon icon="ion-checkmark" size="24px" style="color:#16A6B6"></ons-icon>
+			</ons-col>
+		</ons-row>
+	</ons-bottom-toolbar>
+</ons-page>

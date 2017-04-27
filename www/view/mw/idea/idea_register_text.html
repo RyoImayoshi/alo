@@ -1,0 +1,27 @@
+<ons-page ng-controller="IdeaRegisterTextCtrl as ideaRegisterText">
+	<ons-toolbar>
+		<div class="center" style="color:#181818;font-size:13px;letter-spacing:1px;">
+			アイデアを入力する
+		</div>
+	</ons-toolbar>
+	<ons-row style="margin-top:5px;">
+		<ons-col class="grid_left" align="left" vertical-align="top" width="10%">
+			<ons-icon icon="ion-compose" size="22px" style="color:#4d4d4d"></ons-icon>
+		</ons-col>				
+		<ons-col class="grid_left_half grid_right" width="90%" align="left" style="padding-top:5px;font-size:10px;">
+			<textarea resize-textarea ng-model="r" class="textarea textarea--transparent" modifier="material" placeholder="body" style="border:0.5px solid #999;"></textarea>
+		</ons-col>				
+	</ons-row>
+	<ons-bottom-toolbar class="bottom-toolbar-common">
+		<ons-row style="line-height:40px;">
+			<ons-col width="50%">
+			</ons-col>
+			<ons-col width="30%" vertical-align="center" style="text-align:center" ng-click="ideaRegisterText.popIdeaRegisterText()">
+				<ons-icon icon="ion-close" size="20px" style="color:#999"></ons-icon>
+			</ons-col>
+			<ons-col width="20%" vertical-align="center" style="text-align:center" ng-click="">
+				<ons-icon icon="ion-chevron-left" size="24px" style="font-weight:bold;color:#16A6B6"></ons-icon>
+			</ons-col>
+		</ons-row>
+	</ons-bottom-toolbar>
+</ons-page>
